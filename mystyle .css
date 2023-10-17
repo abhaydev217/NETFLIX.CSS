@@ -1,0 +1,36 @@
+.parent{background-color: rgb(50, 47, 47);
+        height: 100vh;
+        width: 100%;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        display: flex;
+        display: grid;
+       
+        row-gap: 5px;
+        flex-wrap: wrap;}
+
+  .child{background-color: black;
+         border: solid 2px red;}   
+         
+    .child1{display: flex;        
+            height: 100vh;
+            flex-wrap: wrap;
+            background-image: url(./netflix.files/child\ 1\ background\ img.jpg);
+            background-size: cover;} 
+            
+
+    .child2{display: flex;
+            height: 80vh;
+            flex-wrap: wrap;} 
+            
+    .child3{display: flex;
+            height: 80vh;
+            flex-wrap: wrap;}  
+            
+    .child4{display: flex;
+            height: 80vh;
+            flex-wrap: wrap;}  
+            
+    .child5{display: flex;
+            height: 80vh;
+            flex-wrap: wrap;}        
