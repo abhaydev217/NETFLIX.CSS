@@ -1,36 +1,200 @@
 .parent{background-color: rgb(50, 47, 47);
         height: 100vh;
-        width: 100%;
+        width:100vw;
         overflow-y:scroll;
         overflow-x:hidden;
         display: flex;
         display: grid;
-       
+        z-index: 1;
         row-gap: 5px;
         flex-wrap: wrap;}
 
-  .child{background-color: black;
-         border: solid 2px red;}   
+  .child{background-color:black;
+         border: solid 2px red;
+         z-index: 3;}   
          
     .child1{display: flex;        
             height: 100vh;
+            width: 100vw;
             flex-wrap: wrap;
             background-image: url(./netflix.files/child\ 1\ background\ img.jpg);
-            background-size: cover;} 
+            background-size: cover;}  
             
+        .headdiv{background-color: aqua;
+                 width: 100vw;
+                height: 60px;
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;}    
+
+        .miniheaddiv{background-color: blue;
+                     width:98vw;
+                     height:50px;}  
+        .svgnetflix{ height:50px;
+                    color:rgb(229,9,20);
+                    fill: currentColor;}                   
+
 
     .child2{display: flex;
+            flex-wrap: wrap;
             height: 80vh;
-            flex-wrap: wrap;} 
+            width: 100vw;
+            position: relative;
+            align-items: center;
+           } 
+
+       .tv1div{width: 500px;height: 350px;
+               z-index: 5;
+               position: absolute;
+               right: 140px;
+               display: flex;
+              }
+          
+
+       .tv1png{z-index: 5;
+               width: 476px;}  
+
+       .tvscreen1{position: absolute;
+                  
+                  width: 348px;height: 194px;
+                  top:72px;
+                  left:62px;
+                display: flex;}
+        .tv1video{z-index: -1;
+                 width: 100%; height: 100%;}
+        
+       
+        .tv1comment{display: flex;
+                   flex-wrap: wrap;
+                   z-index: 5;
+                   position: absolute;
+                  left: 130px;
+                  background-color: transparent;
+                  display: block;
+                  justify-content: center;
+                  width: 450px;
+                  height: fit-content;
+                  padding: 10px;
+                  overflow: hidden;
+                  }
+
+       .tv1h1{color: aliceblue;
+              font-size: 40px;
+              font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+              font-weight:1000;} 
+
+              
+       .tv1p{color: aliceblue;
+             font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+             font-size: x-large;
+             font-weight: 400;}           
             
+            
+
     .child3{display: flex;
             height: 80vh;
-            flex-wrap: wrap;}  
+            width: 100vw;
+            flex-wrap: wrap;
+            position: relative;
+            align-items: center;} 
+            
+         .mobile1div{width: fit-content;
+                     height: fit-content;
+                      position: absolute;
+                      left: 120px;
+                      display: flex;
+                      justify-content: center;}  
+         .mobile1{background-size: cover;
+                  z-index: 3;} 
+
+        
+         .mobile1minidiv{position: absolute;
+                         background-color: black;
+                         padding: 2px;
+                         border: solid 2px gray;
+                         width: 300px; height: 90px;
+                         z-index: 5;
+                         top: 270px;
+                         border-radius: 10px;
+                         display: flex;
+                         }
+         
+        .mobile1minidivimg{position: absolute;
+                         height:90px; width: 70px;
+                         background-color:black;
+                         z-index: 7;
+                        left:5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                         }   
+                       
+                        
+        .mobile1minidivcontent{position: absolute;
+                               height: 90px; width:160px;
+                              
+                             left: 75px;
+                             display: flex;
+                             display: block;
+                              
+                              
+                                }   
+          
+        .strangerh3{color: aliceblue;
+                                font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+                            font-weight: 1000;
+                         }                
+                         
+        .strangerp{color: rgb(8, 89, 220);
+                       }                  
+                             
+        .mobile1minidivdownload{position: absolute;
+                                height: 90px; width:70px ;
+                         background-color:black;
+                        right: 5px;
+                          display: flex;
+                        z-index: 7;
+                         justify-content: center;
+                         align-items: center;} 
+         
+                   
+                  
+         .mobile1comment{display: flex;
+                flex-wrap: wrap;
+                z-index: 5;
+                position: absolute;left: 650px;
+                 width: 500px;
+                background-color: transparent;} 
+        .mobile1h1span{width: 400px;}        
+
+        .mobile1h1{color: aliceblue;
+                font-size: 40px;
+                font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+                font-weight:1000;}     
+                
+        .mobile1p{color: aliceblue;
+                font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+                font-size: x-large;
+                font-weight: 400;}        
+
             
     .child4{display: flex;
             height: 80vh;
-            flex-wrap: wrap;}  
+            flex-wrap: wrap;
+            position: relative;}  
             
     .child5{display: flex;
             height: 80vh;
-            flex-wrap: wrap;}        
+            flex-wrap: wrap;
+            position: relative;}  
+            
+   .child6{display: flex;
+           height: 130vh;
+           width: 100vw;
+           position: relative;}   
+           
+   .child7{ display: flex;
+           height: 60vh;
+           width: 100vw;
+           position: relative;}         
+           
