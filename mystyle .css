@@ -10,7 +10,7 @@
         flex-wrap: wrap;}
 
   .child{background-color:black;
-         border: solid 2px red;
+         
          z-index: 3;
         }   
          
